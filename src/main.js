@@ -1,3 +1,6 @@
+import Matter from 'matter-js';
+import './styles.css';
+
 (function mainEntry() {
   // Initialize Matter.js
   const Engine = Matter.Engine,
@@ -10,6 +13,8 @@
         Mouse = Matter.Mouse,
         MouseConstraint = Matter.MouseConstraint,
         Common = Matter.Common;
+        
+
 
   // Create engine
   const engine = Engine.create({ enableSleeping: true });
